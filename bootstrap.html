@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet"><style>
+
+          .side1{
+            position: relative;
+            top: 70px;
+            left: 70px;
+            flex: 40%;
+            
+          }
+          .side2{
+            flex: 50%;
+            width: 50%;
+            position: relative;
+            top: 70px;
+            margin-right: 170px;
+            margin-left: 170px;
+          }
+          .main{
+            display: flex;
+            height: 400px;
+            width: 100%;
+            margin-top: 60px;
+            background-image: linear-gradient(to bottom right, rgb(255, 255, rgb(0, 0, 0), 255));
+          }
+          .edit1{
+            font-size: 30px;
+          }
+          .edit2{
+            height: 40px;
+            width: 230px;
+            position: relative;
+            left: 40%;
+          }
+          .edit3{
+            height: 200px;
+            width: 400px;
+            margin: 10px;
+          }
+          .main2{
+            margin-top: 78px;
+          }
+          .contact{
+            width: 800px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid rgb(255, 255, 255);
+            padding: 15px;
+            border-radius: 10px;
+          }
+          .edit4{
+            position: relative;
+            text-align: center;
+            top: 80px;
+          }
+          .navbar{
+            height: 50px;
+            background-image: linear-gradient(to bottom right, rgb(250, 253, 40), rgb(0, 0, 0));
+            color: white;
+          }
+          .sec1{
+            position: relative;
+            left: 360px;
+          }
+          .sec2{
+            position: relative;
+            right: 180px;
+          }
+          .sec{
+            position: relative;
+            left: 900px;
+          }
+          @media screen and (max-width: 768px){
+            .sec{
+              font-size: 180%;
+              font-weight: 700px;
+              text-align: center;
+              padding-top: 2%
+            }
+            .edit1{
+              font-size: 100%;
+            }
+            .side2{
+              font-size: 100%;
+          }
+          .navbar{
+            display: fixed;
+          }
+          }
+        </style>
+    </head>
+    <body style="background-image: linear-gradient(to bottom right, rgb(250, 253, 40), rgb(8, 218, 255));">
+      <!-- navbar creation -->
+      
+        <div class="navbar" >
+           
+           <a href="#abou" style="text-decoration: none;color: white;">About</a>
+           <a href="#cont" style="text-decoration: none;color: white;">Contact</a>
+           <a href="#project" style="text-decoration: none;color: white;">Projects</a>
+           <a href="../Sanhar/Sanhar new cv.pdf" style="text-decoration: none;color: rgb(250, 247, 247);">DOWNLOAD</a>
+        </div>
+
+
+      <!-- about me -->
+      <div class="main" id="abou">
+        <div class="side1">
+          <img src="./image/passportsize.jpg">
+        </div>
+        <div class="side2">
+          <h4 class="edit1">About Me</h4>
+          <p>I am a hard-working and driven individual who isn't afraid to face a challenge. I'm passionate about my work and I know how to get the job done. I would describe myself as an open and honest person who doesn't believe in misleading other people and tries to be fair in everything I do.
+            I am a punctual and motivated individual who is able to work in a busy environment and produce high standards of work. I am an excellent team worker and am able to take instructions from all levels and build up good working relationships with all colleagues. I am flexible, reliable and possess excellent time keeping skills.
+          </p>
+        </div>
+      </div>
+
+      <!-- my projects -->
+      <div class="main2" id="project">
+        <img class="edit2" src="./image/myproject.png"><br><br>
+        <img class="edit3" src="./image/project1.png">
+        <img class="edit3" src="./image/project2.png">
+        <img class="edit3" src="./image/project3.png">
+      </div>
+      
+
+      <!-- contect me -->
+      <h2 class="edit4" id="cont">CONTACT ME</h2>
+      <div class="contact">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    
+    <!-- Footer -->
+    <footer class="bg-body-tertiary text-center" style="margin-top: 5px;">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+          data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #dd4b39;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #0082ca;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright:
+        <a class="text-body" href="https://mdbootstrap.com/">MOHAMMED SANHAR</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+    <script>
+      (function(download){
+          document.location = 
+              'data:text/attachment;,' + //here is the trick
+              document.getElementById('download').innerHTML;
+                  //document.documentElement.innerHTML; //To Download Entire Html Source
+      })();
+      </script>
+    </body>
+</html>
+
